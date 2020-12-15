@@ -1,0 +1,33 @@
+{% extends 'root.html' %}
+
+
+{% block content %}
+    <!-- ======= Breadcrumbs ======= -->
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Inner Page</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Inner Page</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+        Day:{{result1}}
+        Month:{{result2}}
+        Year:{{result3}}
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  {% endblock %}
+

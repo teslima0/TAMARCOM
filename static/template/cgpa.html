@@ -1,0 +1,177 @@
+
+
+{% extends 'root.html' %}
+
+
+{% block content %}
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>CGPA Calculator</h2>
+          <ol>
+            <li><a href="{% url  'homepage'  %}">Home</a></li>
+            <li>CGPA Calculator</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner Page">
+      <div class="container">
+
+
+<h2 style="color: red;">Important Notice ensure you input your grade in capital letter, all the best.</h2>
+     <br/><br/>
+<form action="/gpa/" method="POST">
+        
+         {% csrf_token %}
+         <center>
+         <div class="form-row">
+           <div class="form-group col-md-2">
+             <label for="name">Course1 Grade</label>
+             <input type="text" name="nums1" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+             <div class="validate"></div>
+           </div>
+           <div class="form-group col-md-2">
+           <label for="name">unit</label>
+           <input type="text" name="nums2" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+           <div class="validate"></div>
+           </div>
+         </div>
+
+         <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="name">Course2 Grade</label>
+              <input type="text" name="nums3" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group col-md-2">
+            <label for="name">unit</label>
+            <input type="text" name="nums4" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="name">Course3 Grade</label>
+              <input type="text" name="nums5" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group col-md-2">
+            <label for="name">unit</label>
+            <input type="text" name="nums6" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="name">Course4 Grade</label>
+              <input type="text" name="nums7" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group col-md-2">
+            <label for="name">unit</label>
+            <input type="text" name="nums8" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="name">Course5 Grade</label>
+              <input type="text" name="nums9" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group col-md-2">
+            <label for="name">unit</label>
+            <input type="text" name="nums10" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="name">Course6 Grade</label>
+              <input type="text" name="nums11" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group col-md-2">
+            <label for="name">unit</label>
+            <input type="text" name="nums12" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="name">Course7 Grade</label>
+              <input type="text" name="nums13" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group col-md-2">
+            <label for="name">unit</label>
+            <input type="text" name="nums14" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="name">Course8 Grade</label>
+              <input type="text" name="nums15" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group col-md-2">
+            <label for="name">unit</label>
+            <input type="text" name="nums16" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="name">Course9 Grade</label>
+              <input type="text" name="nums17" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group col-md-2">
+            <label for="name">unit</label>
+            <input type="text" name="nums18" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="name">Course10 Grade</label>
+              <input type="text" name="nums19" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group col-md-2">
+            <label for="name">unit</label>
+            <input type="text" name="nums20" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+            </div>
+
+          </div>
+
+          
+
+
+      </center>
+         
+         <div class=""><button type="submit">submit</button></div>
+        
+        
+       </form>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+ {% endblock %}
