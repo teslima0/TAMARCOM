@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'o93uo@=)0%@+$lo%o1-1xys*d==g=oh_$(m1-*!*aa*fviwxj0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 #after hosting
 #EMAIL_HOST='smtp.zoho.com'
 #EMAIL_HOST_USER='oyedotuna@gmail.com'
@@ -31,7 +31,7 @@ DEBUG = True
 #EMAIL_PORT= 465
 #EMAIL_USE_TLS= True
 #EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','tamarcom.herokuapp.com']
 
 
 # Application definition
@@ -49,7 +49,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    #'whitenoise.midddleware.WhiteNoise.Middleware'
+    'whitenoise.midddleware.WhiteNoise.Middleware'
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
