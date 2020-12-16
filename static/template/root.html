@@ -1,0 +1,762 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tamar's world</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="% static 'assets/img/favicon.png'%}" rel="icon">
+  <link href="% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v1.4.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+{% block content %}
+   <!-- ======= Top Bar ======= -->
+   <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="icofont-envelope"></i><a href="mailto:oyedotuna@gmail.com">oyedotuna@gmail.com</a>
+        <i class="icofont-phone"></i> +2348054875791
+      </div>
+      <div class="social-links float-right">
+        <a href="http://www.twitter.com/teslima0 " class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="http://www.facebook.com/teslima0 " class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="http://www.instagram.com/teslima0 " class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="# " class="skype"><i class="icofont-skype"></i></a>
+        <a href="# " class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><img src="{% static 'assets/img/favicon.png'%}" alt="" class="img-fluid"><a href="{% url  'homepage'  %}"><span>Tamarcom</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="{% url  'homepage'  %}"><img src="{% static 'assets/img/favicon.png'%}" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="{% url  'homepage'  %}">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          
+          <li class="drop-down"><a href="">TAMARCOM</a>
+            <ul>
+              
+                  <li class="active"><a href="{% url  'homepage'  %}">Home</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+                
+          
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+          
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url({% static 'assets/img/slide/slide-1.jpg'%});">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Tamarcom Nigeria Limited</span></h2>
+                <p class="animate__animated animate__fadeInUp">Tamarcom is one of the most soughted after IT firm in the technology World. </p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-2.jpeg'%});">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">what we do</h2>
+                <p class="animate__animated animate__fadeInUp"> we offer information, communication and technological services. we deploy machine to act in you stead and perform difficul task for you while you are relaxing..
+
+                  Read More</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-3.jpg'%});">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">our strenght</h2>
+                <p class="animate__animated animate__fadeInUp">we are driven by our determination to offer best service to our client.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-rounded-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-rounded-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 video-box">
+            <img src="{% static 'assets/img/about.jpg'%}" class="img-fluid" alt="">
+           <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>-->
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+
+            <div class="section-title">
+              <h2>About Us</h2>
+              <p>TAMARCOM Technologies Always delighted in Providing The Best.<br/>
+                We are an innovation-driven enterprise providing IT services that are scalable, secure, proven, easy to use with support provided. Our ultimate goal is to deliver technologies that help our clients run more profitable businesses, and discover better ways to achieve their business goals and objectives. Our strength is driven by our strong determination to provide excellence services to our customers. 
+                <br/><br/>Everything we do is with the end result in mind. So if you are trying to generate more sales, leads, or transform your business, we have a solution that works. Our techniques have been proven time and time again. 
+              </p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="">Why Choose TAMARCOM?</a></h4>
+              <p class="description"> 
+                TAMARCOM Technologies is one of the best Information & Communication Technology (ICT) companies in Nigeria.
+                </p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-gift"></i></div>
+              <h4 class="title"><a href="">What We Do? </a></h4>
+              <p class="description">
+                We are a dynamic and business focused ICT firm. We introduce a unique set of skills and competences as required for the teeming needs of our clients.
+                </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    
+    
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="icofont-computer"></i></div>
+            <h4 class="title"><a href="">Computer Repair</a></h4>
+            <p class="description">TAMARCOM help you servivce both hardware and software of your computer</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="icofont-laptop-alt"></i></div>
+            <h4 class="title"><a href="">Software Installation</a></h4>
+            <p class="description">We help our client to install operating software and application software of their choice</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="icofont-earth"></i></div>
+            <h4 class="title"><a href="">Web design & development</a></h4>
+            <p class="description">we provide the best web and ICT services that is inline with the latest trends in design to meet up the web 2.0 standards and technologies which gives your website visitor a wonderful browsing experience and a reason to trust and do business with you.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="icofont-chart-line-alt"></i></div>
+            <h4 class="title"><a href="">Data Science</a></h4>
+            <p class="description"> Product reviews of a company can be used to preict the future behavior of their customers. similarly Government officials can analysis potential future scenarios and adapt to rapidly changing situation. The other area includes Health, Marketing and sales, Transportation, E- commerce, financial service, oil and gas, manufacturing, forensic etc..</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="icofont-unique-idea"></i></div>
+            <h4 class="title"><a href="">Machine Learning</a></h4>
+            <p class="description">Machine Learning (ML) is the hottest field in data science. The ultimate goal is to adapt to new data independently and make decision and recommendation based on thousands of calculation and analysis. It’s infer based on knowledge gain from the data they’re fed.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="icofont-robot"></i></div>
+            <h4 class="title"><a href="">Artificial Intelligent</a></h4>
+            <p class="description">Artificial intelligence (AI) makes it possible for machines to learn from experience, adjust to new inputs and perform human-like tasks.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section class="counts section-bg">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up">
+            <div class="count-box">
+              <i class="icofont-simple-smile" style="color: #20b38e;"></i>
+              <span data-toggle="counter-up">232</span>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="icofont-document-folder" style="color: #c042ff;"></i>
+              <span data-toggle="counter-up">521</span>
+              <p>Projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="count-box">
+              <i class="icofont-live-support" style="color: #46d1ff;"></i>
+              <span data-toggle="counter-up">1,463</span>
+              <p>Hours Of Support</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
+            <div class="count-box">
+              <i class="icofont-users-alt-5" style="color: #ffb459;"></i>
+              <span data-toggle="counter-up">15</span>
+              <p>Hard Workers</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="section-title">
+          <h2>Our Portfolio</h2>
+          <p> We Are Experts In the Art of Website Design & Development, App Development, ML and Data science. we've handled hundreds of web and other ICT related projects. We skillfully deploy our digital experiences that combine design, technology & strategy contributing to the success of businesses through exceptional services. </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Robbotics</li>
+              <li data-filter=".filter-web">Web App</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-1.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>Desktop App</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/portfolio-1.jpg'%}" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-eye"></i></a>
+                  <a href="{% url  'portfolio'  %}" title="More Details"><i class="icofont-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-2.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App2</h4>
+                <p>game</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/portfolio-2.jpg'%}" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-eye"></i></a>
+                  <a href="{% url  'portfolio'  %}" title="More Details"><i class="icofont-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-3.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App3</h4>
+                <p>gender and age prediction</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/portfolio-3.jpg'%}" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-eye"></i></a>
+                  <a href="{% url  'portfolio'  %}" title="More Details"><i class="icofont-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-4.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App4</h4>
+                <p>AI app</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/portfolio-4.jp'%}g" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-eye"></i></a>
+                  <a href="{% url  'portfolio'  %}" title="More Details"><i class="icofont-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-6.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>Loan Calculator</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/portfolio-6.jpg'%}" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="icofont-eye"></i></a>
+                  <a href="{% url  'portfolio'  %}" title="More Details"><i class="icofont-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-7.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App6</h4>
+                <p>chatbot</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/portfolio-7.jpg'%}" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="icofont-eye"></i></a>
+                  <a href="{% url  'portfolio'  %}" title="More Details"><i class="icofont-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-5.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App5</h4>
+                <p>School management app</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/portfolio-5.jpg'%}" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="icofont-eye"></i></a>
+                  <a href="{% url  'portfolio'  %}" title="More Details"><i class="icofont-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-8.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App7</h4>
+                <p>Cgpa Calculator</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/portfolio-8.jpg'%}" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="icofont-eye"></i></a>
+                  <a href="{% url  'cgpa'  %}" title="More Details"><i class="icofont-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-9.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App8</h4>
+                <p>Age calculator</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/portfolio-9.jpg'%}" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-eye"></i></a>
+                  <a href="{% url  'about'  %}" title="More Details"><i class="icofont-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Portfolio Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Team</h2>
+          <p>Tamarcom's management team has extensive experience across a multitude of IT domains. Collectively our management team has 5+ years of experience spanning across Web design & developmen, Machine learning, Marketing & Content writing.
+
+            Each customer engagement is a thought out process. Our leadership team and our technology team converge to deliver a solution that not just resolves an immediate need, but adds value beyond the contract, to impart a significant and positive impact to the business and lives of the client and its customers.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="member">
+              <div class="pic"><img src="{% static 'assets/img/team/team-1.jpg'%}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Oyedotun Teslim</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href="http://www.twitter.com/teslima0 "><i class="icofont-twitter"></i></a>
+                  <a href="http://www.facebook.com/teslima0 "><i class="icofont-facebook"></i></a>
+                  <a href="http://www.instagram.com/teslima0 "><i class="icofont-instagram"></i></a>
+                  <a href="# "><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="{% static 'assets/img/team/team-2.jpg'%}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Miss Mariam</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic"><img src="{% static 'assets/img/team/team-3.jpg'%}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Aare Habib</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="pic"><img src="{% static 'assets/img/team/team-4.jpg'%}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Miss Olamide</h4>
+                <span>Accountant</span>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="row  d-flex align-items-stretch">
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up">
+            <h4>My new business idea will be huge, maybe the next Facebook. Can you help?</h4>
+            <p>
+              No. Websites like Facebook, Amazon and Twitter are not like standard websites. They require hundreds or thousands of hours of work just to get the website launched. Not to mention that you’ll need a team of developers on hand 24 hours a day to keep the website running smoothly.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
+            <h4>Do I actually need a website?</h4>
+            <p>
+              No. If you have more customers than you can handle and don’t want anymore then you might not need a website. However if you want to expand the business, get more enquiries or become the go to person in your space then you should have a website.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="200">
+            <h4>Will my website be mobile friendly?</h4>
+            <p>
+              Yes. Your website will be fully responsive and will look great on all devices. We don’t charge extra for this. It comes as standard.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="300">
+            <h4>How do you build my website?</h4>
+            <p>
+              We design your website either from scratch or with boostrap based on your prefrence and then move it onto the website using web framework known as Django.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="400">
+            <h4>How can you write the text for my website without knowing the business like I do?</h4>
+            <p>
+              We will ask you a series of questions before we begin, then we will research your market and suggest a series of pages for your website. We’ll learn as much as we need to know to create compelling words that inspire people to get in touch.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="500">
+            <h4>Will you write the text for me?</h4>
+            <p>
+              It depends on the package you choose. We are happy to write the text for your website if you would like. We have a copywriter in house who will create the content for your website so you don’t have to.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="400">
+            <h4>How many pages do I get with my website?</h4>
+            <p>
+              You can have an unlimited amount of pages on your website. We will usually design you 3 pages layouts i.e. A homepage, a blog page an inner page e.g. your about page. You can then use whichever layout you want for each new page you want to add.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="400">
+            <h4>How long does it take to build a website?</h4>
+            <p>
+              It takes approximately 4-10 weeks dependinding on the packages you want. more importantly provided we have all the information from you.
+            </p>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="info-box">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>No25,ifedapo Street, Sanyo area, Ibadan</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>oyedotuna@gmail.com<br>agesin@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-box ">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+2348054127986<br>+2348066347208</p>
+            </div>
+          </div>
+
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+            <form action="{% url 'service' %}" method="post" role="form" class="php-email-form">
+              {% csrf_token %}
+              <div class="form-row">
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  {% endblock %}
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Tamacom</h3>
+            <p>
+              No23 Ifedapo estate <br>
+              Ibadan, Oyo state, Nigeria<br><br>
+              <strong>Phone:</strong> +2348054875791<br>
+              <strong>Email:</strong> oyedotuna.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="http://www.twitter.com/teslima0 " class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="http://www.facebook.com/teslima0 " class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="http://www.instagram.com/teslima0" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">App Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Machine Learning</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Visit us at any of our offices and let's discuss your business project, we maintain a good and proven technological strategy to provide solutions for businesses to meet the needs of todays audience.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Tamarcom</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
+        Designed by <a href="https://bootstrapmade.com/">Tamarconcept</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/jquery-sticky/jquery.sticky.js'%}"></script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+
+</body>
+
+</html>
